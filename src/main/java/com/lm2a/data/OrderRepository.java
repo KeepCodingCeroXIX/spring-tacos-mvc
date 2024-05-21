@@ -1,7 +1,11 @@
 package com.lm2a.data;
 
-import com.lm2a.model.Order;
+import org.springframework.data.repository.CrudRepository;
 
-public interface OrderRepository {
-	Order save(Order order);
+import com.lm2a.model.Ingredient;
+import com.lm2a.model.Order;
+import com.lm2a.model.Taco;
+
+public interface OrderRepository extends CrudRepository<Order, Long> {
+
 }
