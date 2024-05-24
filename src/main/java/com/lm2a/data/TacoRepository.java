@@ -1,10 +1,11 @@
 package com.lm2a.data;
 
-import org.springframework.data.repository.CrudRepository;
 
-import com.lm2a.model.Ingredient;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+
 import com.lm2a.model.Taco;
 
-public interface TacoRepository extends CrudRepository<Taco, Long> {
+public interface TacoRepository extends PagingAndSortingRepository<Taco, Long> {
 
 }
